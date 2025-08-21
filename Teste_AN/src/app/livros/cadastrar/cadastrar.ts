@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Cadastrar {
 
+  nome = 'Pietro';
+
+  caminhoImagem = '';
+
+  dizerOi(){
+    this.nome = 'Olá Quarto Termo A';
+  }
+
 }
