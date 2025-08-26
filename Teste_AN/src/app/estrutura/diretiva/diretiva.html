@@ -1,0 +1,23 @@
+<title>Diretiva</title>
+
+<div>
+    <button (click)="btnVO()">
+        Visivel/Ocultar
+    </button>
+
+    <button (click)="btnMais()">
+        +
+    </button>
+
+    <button (click)="btnMenos()">
+        -
+    </button>
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="let aluno for listaAlunos>
+            {{aluno.id}} - {{aluno.nome}} - {{aluno.status}}
+        </li>
+    </ul>
+</div>

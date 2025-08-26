@@ -16,4 +16,19 @@ export class Cadastrar {
     this.nome = 'Olá Quarto Termo A';
   }
 
+  listaItens = ['Maçã', 'Banana', 'Laranja'];
+
+  isDestaque = 'true';
+  hasError = 'false';
+
+  corFundo = yellow;
+
+  mostrarMensagem = false;
+
+  toggleMensagem(){
+    this.mostrarMensagem = !this.mostrarMensagem;
+    this.isDestaque = !this.isDestaque;
+    this.hasError = !this.hasError;
+  }
+
 }

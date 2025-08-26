@@ -5,3 +5,20 @@
 <img [src]="caminhoImagem"/>
 
 <button (click)="dizerOi()"> Clique Aqui </button>
+
+<p *ngIf="mostratMensagem">Esta Mensagem é exibida condicionalmente</p>
+<button (click)="togleMensagem()">Alternar Mensagem</button>
+
+<ul>
+    <li *ngFor="let itens for Lista Itens">
+        {{itens}}
+    </li>
+</ul>
+
+<div [ngClass]="{'Destaque': isDestaque, 'Erro': hasError}">
+    Este elemento tem classes dinamicas
+</div>
+
+<div [ngStyle]="{'background-color': corFundo, 'font-size': tamanhoFonte}">
+    Este elemento tem classes dinamicas
+</div>
