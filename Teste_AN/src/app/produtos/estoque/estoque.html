@@ -1,0 +1,35 @@
+<title>Estoque de Produtos</title>
+
+<button (click)="btnAumentar()">
+    Aumentar preços em 10%
+</button>
+
+<button (click)="btnDiminuir()">
+    Diminuir preços em 10%
+</button>
+
+<br>
+
+<br><br>
+
+<table border="1" style="border-collapse: collapse; width: 50%;">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Estoque</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of listaProdutos">
+      <td>{{ produto.nome }}</td>
+      <td>R$ {{ produto.preco | number:'1.2-2' }}</td>
+      <td>{{ produto.estoque }}</td>
+      <td *ngIf="mostrarStatus">
+        {{ produto.estoque <= 0 ? 'Indisponível' : produto.status }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+

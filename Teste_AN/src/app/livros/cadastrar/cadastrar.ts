@@ -21,14 +21,10 @@ export class Cadastrar {
   isDestaque = 'true';
   hasError = 'false';
 
-  corFundo = yellow;
-
   mostrarMensagem = false;
 
   toggleMensagem(){
     this.mostrarMensagem = !this.mostrarMensagem;
-    this.isDestaque = !this.isDestaque;
-    this.hasError = !this.hasError;
   }
 
 }
