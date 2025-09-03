@@ -1,6 +1,15 @@
-.destaque{
-    background-color: blue;
+h1 {
+  text-align: center;
 }
-.error{
-    background-color: red;
+
+p {
+  font-size: 1.2em;
+}
+
+.destaque {
+  background-color: green;
+}
+
+.erro {
+  background-color: red;
 }

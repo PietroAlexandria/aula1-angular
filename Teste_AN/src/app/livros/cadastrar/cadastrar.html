@@ -1,4 +1,4 @@
-<!-- <p>Cadastrar trabalhando!</p>
+<title>Tela de Cadastro</title>
 
 {{nome}}
 
@@ -9,18 +9,21 @@
 <p *ngIf="mostratMensagem">Esta Mensagem é exibida condicionalmente</p>
 <button (click)="togleMensagem()">Alternar Mensagem</button>
 
+<br><br>
+
 <ul>
-    <li *ngFor="let itens for Lista Itens">
-        {{itens}}
+    <li *ngFor="let itens for listaItens">
+        {{ itens }}
     </li>
 </ul>
+<button (click)="alterarItens()">Alterar Itens</button>
 
-<div [ngClass]="{'Destaque': isDestaque, 'Erro': hasError}">
-    Este elemento tem classes dinamicas
+<div [ngClass]="{'destaque': isDestaque, 'erro': hasError}">
+    Campo 1 (Erro e Destaque)
 </div>
 
-<div [ngStyle]="{'background-color': corFundo, 'font-size': tamanhoFonte}">
-    Este elemento tem classes dinamicas
-</div> -->
+<div [ngStyle]="{'background-color': corFundo, 'font-size': tamanhoFonte + 'px'}">
+    Campo 2 (Cor de fundo e Font Size)
+</div>
 
 <app-listar-component></app-listar-component>
