@@ -1,13 +1,58 @@
 <title>Tela de Cadastro</title>
 
-{{nome}}
+<mat-toolbar style="background-color: darkblue; color: white;">
+  <span>My Application</span>
+</mat-toolbar>
+
+<table>
+    <tr>
+        <td vertical-align="top" style="padding-right: 20px;">
+            <mat-card class="example-card" appearance="outlined">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Raça de Cachorro</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>{{textShibaInu}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button matButton>LIKE</button>
+                <button matButton>COMPARTILHAR</button>
+            </mat-card-actions>
+            </mat-card>
+        </td>
+        <td vertical-align="top" style="padding-left: 20px;">
+            <mat-card class="example-card" appearance="outlined">
+            <mat-card-header>
+                <mat-card-title>Chihuahua</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{textChihuahua}}</p>
+            </mat-card-content>
+            <mat-card-footer class="example-card-footer">
+                <mat-chip-set aria-label="Chihuahua traits">
+                <mat-chip>charming</mat-chip>
+                <mat-chip>graceful</mat-chip>
+                <mat-chip>sassy</mat-chip>
+                </mat-chip-set>
+            </mat-card-footer>
+            </mat-card>
+        </td>
+    </tr>
+</table>
+
+
+
+<!-- {{nome}}
 
 <img [src]="caminhoImagem"/>
 
 <button (click)="dizerOi()"> Clique Aqui </button>
 
-<p *ngIf="mostratMensagem">Esta Mensagem é exibida condicionalmente</p>
-<button (click)="togleMensagem()">Alternar Mensagem</button>
+<p *ngIf="mostrarMensagem">Esta Mensagem é exibida condicionalmente</p>
+<button (click)="toggleMensagem()">Alternar Mensagem</button>
 
 <br><br>
 
@@ -22,8 +67,8 @@
     Campo 1 (Erro e Destaque)
 </div>
 
-<div [ngStyle]="{'background-color': corFundo, 'font-size': tamanhoFonte + 'px'}">
+<div [ngStyle]="{'background-color': corDeFundo, 'font-size': tamanhoFonte + 'px'}">
     Campo 2 (Cor de fundo e Font Size)
 </div>
 
-<app-listar-component></app-listar-component>
+<app-listar-component></app-listar-component> -->
