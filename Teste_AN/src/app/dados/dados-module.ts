@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { DadosRoutingModule } from './dados-routing-module';
 import { Tabela } from './tabela/tabela';
+import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -11,7 +15,11 @@ import { Tabela } from './tabela/tabela';
   ],
   imports: [
     CommonModule,
-    DadosRoutingModule
+    DadosRoutingModule,
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule
   ]
 })
 export class DadosModule { }
